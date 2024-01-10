@@ -11,11 +11,11 @@ export function Footer() {
         <div className="bg-emerald-700 text-white">
             <div className="container ">
                 <div className="grid lg:grid-cols-2  py-5 mt-10  border-b-2 ">
-                    <div className="py-8 px-4 w-full">
-                        <h1 className="sm:text-3xl text-xl font-bold sm:text-left mb-3 px-20 ">
+                    <div className="py-8 sm:px-4 w-full">
+                        <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-center mb-3 sm:px-20 ">
                             Books.
                         </h1>
-                        <div className="flex justify-between px-20  ">
+                        <div className="flex justify-between sm:px-20  ">
                             <div className="mx-10">
                                 <h1 className="text-xl font-bold">Address:</h1>
                                 <p>Books</p>
@@ -46,16 +46,21 @@ export function Footer() {
                     <div className="flex flex-col justify-center items-center gap-2">
                         <h1 className="font-bold">Get the latest news about our books</h1>
 
-                        <form className="rounded px-8 pt-3 pb-8 ">
-                            <div className="flex justify-center items-center gap-3">
-                                <input
+                        <form className="rounded sm:px-8 pt-3 pb-8 ">
+                            <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+                                <div>
+                                    <input
                                     className="shadow border rounded  py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
                                     id="username" type="email" placeholder="Enter your e-mail in here "/>
-                                <button type="button" className="border-2 px-3 py-1 rounded-lg bg-red-500 hover:bg-red-700 duration-300 text-white">SUBSCRIBE</button>
+                                </div>
+                                <div className="flex justify-center items-center">
+                                    <button type="button" className="border-2 px-3 py-1 rounded-lg bg-red-500 hover:bg-red-700 duration-300 text-white">SUBSCRIBE</button>
+                                </div>
+
 
                             </div>
                         </form>
-                        <div className="flex items-center  justify-center ">
+                        <div className="flex items-center  justify-center md:text-left ">
                             <label className="md:w-2/3 block text-gray-500 font-bold">
                                 <input className="mr-2 leading-tight" type="checkbox"/>
                                 <span className="text-sm text-white">
@@ -66,12 +71,12 @@ export function Footer() {
                     </div>
 
                 </div>
-                <div className="py-3 flex justify-between items-center px-5">
-                    <div className="px-5">
+                <div className="py-3 flex flex-col sm:flex-row justify-between items-center px-5">
+                    <div className="px-5 text-center">
                         <h1>Copyright &copy; 2023 Books.All Rights Reserved. </h1>
 
                     </div>
-                    <div  className="flex justify-center items-center gap-5 px-5" >
+                    <div  className="flex flex-col sm:flex-row justify-center items-center py-3 gap-5 px-5" >
                     <h1>Terms & Conditions</h1>
                     <h1>Privacy Policy</h1>
                     <h1>Do Not Sell My Information </h1>
