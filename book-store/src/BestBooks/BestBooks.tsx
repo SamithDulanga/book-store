@@ -73,7 +73,7 @@ export function BestBooks() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-5 max-w-[300px]  sm:max-w-[900px] sm:max-h-[1920px] object-contain " >
                         {booksData1.map((book)=>(
-                            <div className="py-4 text-center border-2 px-4 rounded-2xl my-4  ">
+                            <div key={book.id} className="py-4 text-center border-2 px-4 rounded-2xl my-4  ">
                                 <div className="">
                                     <img src={book.img}/>
                                 </div>

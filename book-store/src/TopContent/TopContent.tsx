@@ -74,7 +74,7 @@ export function TopContent() {
                             <div className="flex flex-col gap-4">
                                 {
                                     imageList.map((data)=>(
-                                        <img src={data.img} className="max-w-[130px] max-h-[130px] object-contain inline-block hover:scale-110
+                                        <img src={data.img} key={data.id} className="max-w-[130px] max-h-[130px] object-contain inline-block hover:scale-110
                                         duration-300" onClick={()=>{
                                             setImageId(
                                                 data.id===1 ? Book1 : data.id===2 ? Book2:Book3

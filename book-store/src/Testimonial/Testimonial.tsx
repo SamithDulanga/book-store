@@ -112,7 +112,7 @@ export function Testimonial() {
                 <div>
                     <Slider {...settings}>
                         {testimonialData.map((data)=>(
-                            <div>
+                            <div key={data.id}>
                                 <div className="flex flex-col shadow-lg border-2 gap-4 py-8 px-6 mx-4 rounded-xl ">
                                     <div className="flex items-center gap-5">
                                         <img src={data.img} className="rounded-full w-20 h-20 object-cover"/>

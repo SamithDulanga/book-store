@@ -51,8 +51,8 @@ export function Navbar() {
                             <ul className="items-center gap-4 hidden sm:flex">
                                 {
                                     Menu.map((menu)=>(
-                                        <li>
-                                            <a href={menu.link} className="inline-block py-4 px-4
+                                        <li key={menu.id}>
+                                            <a href={menu.link}  className="inline-block py-4 px-4
                                             hover:text-emerald-500 duration-200">
                                                 {menu.name}
                                             </a>
